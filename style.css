@@ -1,8 +1,6 @@
-
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #fdf6ee;
+  margin: 0; padding: 0;
+  background: #fdf6ee;
   font-family: 'Georgia', serif;
   color: #4a3f35;
 }
@@ -10,16 +8,25 @@ body {
 .landing {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  flex-direction: column;
   text-align: center;
+  padding: 40px 20px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #a67c52;
+  margin-bottom: 20px;
 }
 
 .brand {
   font-size: 3.5rem;
-  margin-bottom: 10px;
+  margin: 0;
   letter-spacing: 1px;
 }
 
@@ -31,22 +38,20 @@ body {
 
 .icon-links {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .icon-links a {
   font-size: 2.2rem;
   color: white;
   background-color: #a67c52;
-  width: 60px;
-  height: 60px;
+  width: 60px; height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: 0.2s;
   text-decoration: none;
 }
 
