@@ -1,122 +1,51 @@
 
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
+  padding: 0;
   background-color: #fdf6ee;
+  font-family: 'Georgia', serif;
   color: #4a3f35;
+}
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
   text-align: center;
 }
 
-nav {
-  background-color: #f3e9dc;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #4a3f35;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  padding: 60px 20px;
-  background-color: #f7f0e8;
-}
-
-.hero h1 {
-  font-size: 3rem;
+.brand {
+  font-size: 3.5rem;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.social-links a {
-  margin: 0 10px;
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
   color: #a67c52;
-  text-decoration: none;
 }
 
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-.gallery-item {
-  width: 250px;
-  height: 250px;
-  background-color: #eee2d2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-}
-
-.product-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 20px;
-}
-
-.product {
-  width: 250px;
-  background-color: #f8f1e7;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-}
-
-.order-form {
-  margin-top: 40px;
+.link-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.order-form input,
-.order-form textarea {
-  padding: 10px;
-  border: 1px solid #d8c9b4;
-  border-radius: 5px;
-  font-family: inherit;
-}
-
-.order-form button {
-  padding: 10px;
-  background-color: #a67c52;
+.link-list a {
+  text-decoration: none;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #a67c52;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 200px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.order-form button:hover {
+.link-list a:hover {
   background-color: #946c40;
-}
-
-footer {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #f3e9dc;
 }
