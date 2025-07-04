@@ -25,27 +25,32 @@ body {
 
 .tagline {
   font-size: 1.1rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #a67c52;
 }
 
-.link-list {
+.icon-links {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.link-list a {
-  text-decoration: none;
+.icon-links a {
+  font-size: 2.2rem;
   color: white;
   background-color: #a67c52;
-  padding: 12px 20px;
-  border-radius: 8px;
-  width: 200px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
 }
 
-.link-list a:hover {
+.icon-links a:hover {
   background-color: #946c40;
+  transform: scale(1.1);
 }
