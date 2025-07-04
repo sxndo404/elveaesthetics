@@ -59,3 +59,27 @@ body {
   background-color: #946c40;
   transform: scale(1.1);
 }
+.link-boxes {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.link-box {
+  background-color: #ffffff;
+  color: #4a3f35;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.link-box:hover {
+  background-color: #f0e5d8;
+}
