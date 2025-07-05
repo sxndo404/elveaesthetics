@@ -12,11 +12,12 @@ body {
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 140px;              /* kleiner */
+  height: 140px;             /* kleiner */
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1.5rem;
+  border-radius: 50%;        /* rund machen */
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* optional: schöner Schatten */
 }
 
 .brand {
