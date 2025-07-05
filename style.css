@@ -50,9 +50,9 @@ body {
 
 .bottom-sections {
   display: flex;
-  justify-content: center;
+  flex-direction: column;  /* <– macht die Boxen untereinander */
+  align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .box {
