@@ -1,3 +1,4 @@
+/* Grundlayout */
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ body {
   justify-content: center;
 }
 
+/* Landing-Bereich */
 .landing {
   text-align: center;
   padding: 2rem 1rem;
@@ -15,18 +17,22 @@ body {
   width: 100%;
 }
 
+/* Titel */
 .brand {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin: 0.5rem 0;
+  color: #5a4634;
 }
 
+/* Untertitel */
 .tagline {
   font-size: 1rem;
   margin-bottom: 2rem;
-  color: #6b6b6b;
+  color: #8b7760;
 }
 
+/* Profilbild */
 .profile-img {
   width: 140px;
   height: 140px;
@@ -36,6 +42,7 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Icons (Instagram etc.) */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -53,6 +60,7 @@ body {
   transform: scale(1.2);
 }
 
+/* Boxen untereinander */
 .info-boxes {
   display: flex;
   flex-direction: column;
