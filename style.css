@@ -1,14 +1,14 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #f5f1eb;
-  color: #3b2f2f;
+  color: #3d3d3d;
   text-align: center;
 }
 
 .landing {
-  padding: 3rem 1rem;
+  padding: 2rem;
 }
 
 .profile-img {
@@ -16,35 +16,51 @@ body {
   height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .brand {
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
 }
 
 .tagline {
   font-size: 1.2rem;
-  color: #7d6b5c;
   margin-bottom: 2rem;
+  color: #6b6b6b;
 }
 
-.social-icons {
+.link-icons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-.social-icons a {
-  font-size: 2rem;
-  color: #6b4e3d;
-  transition: transform 0.2s ease;
+.link-icons a {
+  font-size: 1.8rem;
+  color: #3d3d3d;
+  text-decoration: none;
 }
 
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #a57b5b;
+.link-icons a:hover {
+  color: #a9835a;
+}
+
+.bottom-sections {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #e8e1d6;
+  padding: 1.5rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  min-width: 140px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
