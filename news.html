@@ -9,37 +9,50 @@
       background-color: #f9f4ef;
       color: #3e3e3e;
       padding: 2rem;
-      .info-box {
-  background-color: #fff6ee;
-  padding: 1.2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  font-size: 1rem;
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
-a.info-box {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+      text-align: center;
     }
+
     h1 {
       font-family: 'Playfair Display', serif;
       color: #5a4634;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .info-box {
+      background-color: #fff6ee;
+      padding: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      font-size: 1rem;
+      margin: 1rem auto;
+      max-width: 300px;
+      transition: transform 0.2s ease;
+    }
+
+    .info-box:hover {
+      transform: scale(1.02);
+    }
+
+    a.info-box {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
   </style>
 </head>
 <body>
+
   <h1>News</h1>
   <p>Hier findest du aktuelle Neuigkeiten rund um elveaesthetics.</p>
-  <div class="info-box">
-  Dekoration Hochzeit
-    <a href="#" class="info-box">
-  Dekoration Hochzeit
-</a>
 
-</div>
+  <!-- Beispiel-Boxen -->
+  <a href="#" class="info-box">Dekoration Hochzeit</a>
+  <a href="#" class="info-box">Neue Trockenblumen im Shop</a>
+  <a href="#" class="info-box">Winterkollektion kommt bald!</a>
 
 </body>
 </html>
