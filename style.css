@@ -60,3 +60,20 @@ body {
   border-radius: 10px;
   width: 250px;
 }
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #6b4e3d;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #a57b5b;
+  }
