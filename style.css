@@ -103,7 +103,7 @@ a{ color:inherit; text-decoration:none; }
 
 .page-title h1{
   margin:0;
-  font-family:var(--brand-font);
+  font-family: "Playfair Display", serif;
   font-weight:400;
   letter-spacing:0.18em;
   color:#ffffff
