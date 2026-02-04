@@ -1,24 +1,26 @@
 :root{
-  --bg:#44532f;
-  --text:#1a1a1a;
-  --muted:#8b8b8b;
-  --rule:#e6e2dd;
+  --bg:#44532f;                 /* forest / moss background */
+  --text:rgba(255,255,255,0.95);/* main text on dark bg */
+  --muted:rgba(255,255,255,0.65);
+  --rule:rgba(255,255,255,0.28);
   --max:1100px;
 
-  --brand-font:"Dancing Script", serif;
+  --brand-font:"Dancing Script", cursive;
   --ui-font:"Quicksand", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --title-font:"Playfair Display", serif;
 }
 
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; background:var(--bg); color:var(--text); }
 a{ color:inherit; text-decoration:none; }
 
+/* Topbar */
 .topbar{
   position:sticky;
   top:0;
   background:rgba(255,255,255,0.92);
   backdrop-filter:saturate(180%) blur(10px);
-  border-bottom:1px solid #f1f1f1;
+  border-bottom:1px solid rgba(0,0,0,0.06);
   z-index:10;
 }
 
@@ -43,9 +45,10 @@ a{ color:inherit; text-decoration:none; }
   font-family:var(--brand-font);
   font-weight:600;
   letter-spacing:0.5px;
-  font-size:26px; /* -> "ein bisschen grösser" */
+  font-size:26px;
   line-height:1;
   white-space:nowrap;
+  color:#111; /* logo stays dark on white bar */
 }
 
 .nav{
@@ -60,15 +63,15 @@ a{ color:inherit; text-decoration:none; }
   font-size:13px;
   letter-spacing:0.12em;
   text-transform:uppercase;
-  color:var(--muted);
+  color:rgba(0,0,0,0.55);
   padding:6px 0;
   border-bottom:1px solid transparent;
 }
 
-.nav-link:hover{ color:var(--text); }
+.nav-link:hover{ color:#111; }
 .nav-link.is-active{
-  color:var(--text);
-  border-bottom-color:var(--rule);
+  color:#111;
+  border-bottom-color:rgba(0,0,0,0.25);
 }
 
 .icons{
@@ -82,20 +85,22 @@ a{ color:inherit; text-decoration:none; }
   font-family:var(--ui-font);
   font-size:12px;
   letter-spacing:0.10em;
-  color:var(--muted);
+  color:rgba(0,0,0,0.55);
   text-transform:uppercase;
   padding:6px 8px;
-  border:1px solid #f0f0f0;
+  border:1px solid rgba(0,0,0,0.10);
   border-radius:999px;
 }
-.icon-link:hover{ color:var(--text); border-color:var(--rule); }
+.icon-link:hover{ color:#111; border-color:rgba(0,0,0,0.25); }
 
+/* Page container */
 .page{
   max-width:var(--max);
   margin:0 auto;
-  padding:0 18px 40px;
+  padding:0 18px 60px;
 }
 
+/* Center title: PORTFOLIO / WORK */
 .page-title{
   padding:34px 0 10px;
   text-align:center;
@@ -103,12 +108,12 @@ a{ color:inherit; text-decoration:none; }
 
 .page-title h1{
   margin:0;
-  font-family: "Playfair Display", serif;
+  font-family:var(--title-font);
   font-weight:400;
   letter-spacing:0.18em;
-  color:#ffffff
   font-size:22px;
   text-transform:uppercase;
+  color:rgba(255,255,255,0.95);
 }
 
 .rule{
@@ -118,6 +123,7 @@ a{ color:inherit; text-decoration:none; }
   width:min(760px, 92%);
 }
 
+/* Grid (tiles with labels) */
 .grid{
   padding:26px 0 10px;
   display:grid;
@@ -125,17 +131,15 @@ a{ color:inherit; text-decoration:none; }
   gap:22px;
 }
 
-.tile{
-  display:block;
-}
+.tile{ display:block; }
 
 .tile-img{
   width:100%;
-  aspect-ratio: 3 / 4; /* so wie im Screenshot, eher hochkant */
+  aspect-ratio: 3 / 4;
   background-size:cover;
   background-position:center;
-  border:1px solid #f0f0f0;
-  background-color:#f7f5f2;
+  border:1px solid rgba(255,255,255,0.25);
+  background-color:rgba(255,255,255,0.06);
 }
 
 .tile-label{
@@ -145,12 +149,13 @@ a{ color:inherit; text-decoration:none; }
   font-size:12px;
   letter-spacing:0.10em;
   text-transform:uppercase;
-  color:#ffffff;
+  color:rgba(255,255,255,0.85);
 }
 
+/* Footer */
 .footer{
   margin-top:34px;
-  border-top:1px solid #f3f3f3;
+  border-top:1px solid rgba(255,255,255,0.12);
 }
 .footer-inner{
   padding:18px 0;
@@ -171,8 +176,4 @@ a{ color:inherit; text-decoration:none; }
   .brand-row{ flex-direction:column; align-items:flex-start; gap:10px; }
   .icons{ margin-top:2px; }
   .grid{ grid-template-columns:1fr; }
-}
-/* ZENTRALER SEITENTITEL (PORTFOLIO / WORK) */
-.page-title h1{
-  color: rgba(255,255,255,0.95) !important;
 }
