@@ -123,6 +123,21 @@ a{ color:inherit; text-decoration:none; }
   width:min(760px, 92%);
 }
 
+/* ✅ NEW: subtitle under title (e.g. "nature & outdoors") */
+.section-subtitle{
+  margin: 26px 0 18px;
+}
+
+.section-subtitle h2{
+  margin: 0;
+  font-family: var(--ui-font);
+  font-weight: 400;              /* NOT bold */
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: rgba(255,255,255,0.85);
+}
+
 /* Grid (tiles with labels) */
 .grid{
   padding:26px 0 10px;
@@ -177,6 +192,7 @@ a{ color:inherit; text-decoration:none; }
   .icons{ margin-top:2px; }
   .grid{ grid-template-columns:1fr; }
 }
+
 /* NATURE GRID (21 images) */
 .nature-grid{
   margin: 24px auto 40px;
