@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>elveaesthetics – About</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Playfair+Display:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-row">
+        <a class="brand" href="index.html">elveaesthetics</a>
+
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Portfolio</a>
+          <a class="nav-link" href="work.html">Work &amp; Ideas</a>
+          <a class="nav-link is-active" href="about.html">About Me</a>
+          <a class="nav-link" href="offer.html">Offer</a>
+        </nav>
+      </div>
+
+      <div class="icons">
+        <a class="icon-link" href="https://www.instagram.com/elveaesthetics/" target="_blank" rel="noopener">IG</a>
+        <a class="icon-link" href="#" target="_blank" rel="noopener">✉</a>
+        <a class="icon-link" href="#" target="_blank" rel="noopener">P</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-title">
+      <h1>About Me</h1>
+      <div class="rule"></div>
+    </section>
+
+    <section class="section-subtitle">
+      <h2>Hi, I’m …</h2>
+    </section>
+
+    <section style="max-width:720px; margin:0 auto; line-height:1.8;">
+      <p>
+        Write a short text about you / your style / what you offer.
+        (We can make this beautiful later with a proper layout.)
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">© <span id="y"></span> elveaesthetics</div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
