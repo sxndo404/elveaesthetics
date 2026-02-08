@@ -129,11 +129,14 @@ a{ color:inherit; text-decoration:none; }
 }
 
 .section-subtitle h2{
+
+  
+.section-subtitle h2{
   margin: 0;
-  font-family: var(--ui-font);
-  font-weight: 400;              /* NOT bold */
+  font-family: var(--ui-font) !important;
+  font-weight: 300 !important;
   font-size: 14px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   text-transform: lowercase;
   color: rgba(255,255,255,0.85);
 }
@@ -232,6 +235,4 @@ a{ color:inherit; text-decoration:none; }
   font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: lowercase;
-}
-
 }
